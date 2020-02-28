@@ -1,3 +1,5 @@
+
+		<div class="login-form">
 <%= form_with(model: contract, local: true) do |form| %>
   <% if contract.errors.any? %>
     <div id="error_explanation">
@@ -11,17 +13,90 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+  	<div class="sign-up-htm">
+
+
+		<div class="group"> 
+    <%= form.label :Nome_da_Empresa ,for:"user", class:"label"%>
+    <%= form.text_field :name ,id:"user",class:"input"%>
+				
+					
+				</div>
+
+
+
+  
+
+  <div class="group">
+    <%= form.label :CNPJ,for:"user", class:"label" %>
+    <%= form.text_field :cnpj,id:"user",class:"input" %>
+  </div>
+  <div class="group">
+    <%= form.label :Endereço_da_Empresa,for:"user", class:"label" %>
+    <%= form.text_field :local,id:"user",class:"input" %>
+  </div>
+  <div class="group">
+    <%= form.label :Nome_do_representante,for:"user", class:"label" %>
+    <%= form.text_field :nameRep,id:"user",class:"input" %>
   </div>
 
-  <div class="field">
-    <%= form.label :type %>
-    <%= form.text_field :type %>
+<div class="group">
+    <%= form.label :Nacionalidade,for:"user", class:"label" %>
+    <%= form.text_field :nac,id:"user",class:"input" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+<div class="group">
+    <%= form.label :Estado_Civil,for:"user", class:"label" %>
+    <%= form.text_field :status,id:"user",class:"input" %>
+  </div>
+  <div class="group">
+    <%= form.label :'Profissão',for:"user", class:"label" %>
+    <%= form.text_field :prof,id:"user",class:"input" %>
+  </div>
+
+ <div class="group">
+    <%= form.label :'CPF',for:"user", class:"label" %>
+    <%= form.text_field :CPF,id:"user",class:"input" %>
+  </div>
+
+ <div class="group">
+    <%= form.label :'RG',for:"user", class:"label" %>
+    <%= form.text_field :RG,id:"user",class:"input" %>
+  </div>
+  <div class="group">
+    <%= form.label :'Endereço do Representante',for:"user", class:"label" %>
+    <%= form.text_field :end,id:"user",class:"input" %>
+  </div>
+
+
+
+
+   
+
+  <div class="group">
+    <%= form.submit "",class:"button" ,value:"Salvar"%>
+  </div>
   </div>
 <% end %>
+		</div>
+	
+
+		<!--				<div class="group">
+					<label for="user" class="label">Username</label>
+					<input id="user" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+					<input id="pass" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Repeat Password</label>
+					<input id="pass" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Email Address</label>
+					<input id="pass" type="text" class="input">
+				</div>-->
+
+			
+			

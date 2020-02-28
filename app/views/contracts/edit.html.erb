@@ -1,6 +1,10 @@
-<h1>Editing Contract</h1>
+<div class="login-wrap">
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-up" checked><label for="tab-2" class="tab">Novo contrato</label>
 
 <%= render 'form', contract: @contract %>
-
+<div class="hr"></div>
 <%= link_to 'Show', @contract %> |
 <%= link_to 'Back', contracts_path %>
+</div>
+</div>
